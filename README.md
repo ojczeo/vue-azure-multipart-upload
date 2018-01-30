@@ -11,14 +11,14 @@ Required dependencies
 * [VueJS] (http://www.vuejs.com) 
 
 ```bash
-npm i --save vue-azure-uploader
+npm i --save vue-azure-blob-upload
 ```
 
 After instaling by `npm` (above) to your VueJS project
 
 import `'VueAzureUploader'` to your main Vue file like so
 ```javascript
-import VueAzureUploader from 'vue-azure-uploader'
+import VueAzureUploader from 'vue-azure-blob-upload'
 Vue.use(VueAzureUploader);
 ````
 

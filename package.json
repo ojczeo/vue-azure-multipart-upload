@@ -1,6 +1,6 @@
 {
   "name": "vue-azure-blob-upload",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Vue.js project",
   "author": "Andrzej Ojczenasz <codelaborer@gmail.com>",
   "main": "plugin.js",
