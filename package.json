@@ -13,6 +13,18 @@
   "dependencies": {
     "vue": "^2.5.2"
   },
+  "keywords": [
+    "vue",
+    "azure",
+    "multi",
+    "multipart",
+    "mutli-part",
+    "blob",
+    "blob-azure",
+    "blob-upload",
+    "vuejs",
+    "vue.js"
+  ],
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "axios": "^0.17.1",
