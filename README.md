@@ -8,17 +8,24 @@ Provides for the ability to upload an HTML5 File to Azure's Blob Storage. The fi
 
 Required dependencies
 -----------------------
-* [VueJS] (http://www.vuejs.com) 
+* [VueJS](http://www.vuejs.com) 
+* one of HTTP clients:
+   - [Axios](https://github.com/axios/axios)
+   - [Vue Axios](https://github.com/imcvampire/vue-axios)
+   - [Vue Resource](https://github.com/pagekit/vue-resource)
+   
+ Installation
+ -----------------------
 
 ```bash
-npm i --save vue-azure-uploader
+npm i --save vue-azure-blob-upload
 ```
 
 After instaling by `npm` (above) to your VueJS project
 
-import `'VueAzureUploader'` to your main Vue file like so
+import `VueAzureUploader` to your main Vue file like so
 ```javascript
-import VueAzureUploader from 'vue-azure-uploader'
+import VueAzureUploader from 'vue-azure-blob-upload'
 Vue.use(VueAzureUploader);
 ````
 
@@ -43,6 +50,24 @@ The config object has the following properties
 }
 ```
 
+How to use with custom http instance
+-------------
+`VueAzureUploader` is using `Vue.$http` object by default. You can provide custom instance of `Axios` or other promise-based `http` client.
+
+```js
+import Axios from 'axios'
+
+const httpConfig = {
+  headers: {
+    authorizaion: 'Bearer token123'
+  }
+}
+
+const axios = Axios.create(httpConfig)
+
+this.$azureUpload.upload(config, axios)
+
+```
 
 CORS
 -------------

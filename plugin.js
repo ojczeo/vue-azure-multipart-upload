@@ -20,8 +20,14 @@ var azureBlob = function ($log, $http) {
       error: // error callback function,
       blockSize: // Use this to override the DefaultBlockSize
     } */
-    var upload = function (config) {
+    var upload = function (config, httpClient) {
       var state = initializeState(config);
+
+      // custom Http client
+      if (httpClient) {
+        $http = httpClient;
+        $log('custom http client enabled!');
+      }
 
       var reader = new FileReader();
       reader.onloadend = function (evt) {
@@ -170,8 +176,8 @@ var azureBlob = function ($log, $http) {
 
 azureBlob.install = function (Vue, options) {
   Vue.prototype.$log = console.log.bind(console);
-  // instance method
+  // Vue instance method declaration
   Vue.prototype.$azureUpload = this.call('upload', Vue.prototype.$log, Vue.$http);
 }
 
-export default azureBlob
+export default azureBlob;

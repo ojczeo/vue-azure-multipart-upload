@@ -1,7 +1,7 @@
 {
   "name": "vue-azure-blob-upload",
-  "version": "0.0.1",
-  "description": "A Vue.js project",
+  "version": "0.0.5",
+  "description": "VueJS service for multi-part uploading to MS Azure blob storage.",
   "author": "Andrzej Ojczenasz <codelaborer@gmail.com>",
   "main": "plugin.js",
   "scripts": {
@@ -13,6 +13,18 @@
   "dependencies": {
     "vue": "^2.5.2"
   },
+  "keywords": [
+    "vue",
+    "azure",
+    "multi",
+    "multipart",
+    "mutli-part",
+    "blob",
+    "blob-azure",
+    "blob-upload",
+    "vuejs",
+    "vue.js"
+  ],
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "axios": "^0.17.1",

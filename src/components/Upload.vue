@@ -2,7 +2,7 @@
   <div>
     <label for="baseUrl">
       <div>Provide upload url</div>
-      <input type="text" placeholder="Azure upload url" v-model="baseUrl">
+      <input type="text" placeholder="Azure upload url" v-model="baseUrl" id="baseUrl">
     </label>
     <br>
     <br>
@@ -41,6 +41,8 @@
 </style>
 
 <script>
+import Axios from 'Axios'
+
 export default {
   name: 'Upload',
   data () {
@@ -76,7 +78,7 @@ export default {
           complete: this.onComplete,
           error: this.onError
           // blockSize
-        })
+        }, Axios.create({headers: {Authorization: 'Bearer 12345' }}))
       }
     }
   }
