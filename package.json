@@ -1,6 +1,6 @@
 {
   "name": "vue-azure-blob-upload",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "VueJS service for multi-part uploading to MS Azure blob storage.",
   "author": "Andrzej Ojczenasz <codelaborer@gmail.com>",
   "main": "plugin.js",
