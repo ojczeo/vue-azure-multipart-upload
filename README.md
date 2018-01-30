@@ -63,7 +63,7 @@ const httpConfig = {
   }
 }
 
-const axios = new Axios(httpConfig)
+const axios = Axios.create(httpConfig)
 
 this.$azureUpload.upload(config, axios)
 
