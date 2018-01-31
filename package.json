@@ -1,9 +1,14 @@
 {
   "name": "vue-azure-blob-upload",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "VueJS service for multi-part uploading to MS Azure blob storage.",
   "author": "Andrzej Ojczenasz <codelaborer@gmail.com>",
   "main": "plugin.js",
+  "license": "MIT",
+  "bugs": {
+    "url" : "https://github.com/ojczeo/vue-azure-multipart-upload/issues",
+    "email" : "codelaborer@gmail.com"
+  },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
